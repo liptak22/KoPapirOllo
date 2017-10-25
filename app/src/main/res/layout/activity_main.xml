@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.beataliptak.rock_scissors.MainActivity">
+
+ <Button
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/btn_ko"
+     android:text="kő"
+     android:layout_alignBaseline="@+id/btn_papir"
+     android:layout_alignBottom="@+id/btn_papir"
+     android:layout_toLeftOf="@+id/imageView_ember"
+     android:layout_toStartOf="@+id/imageView_ember"
+     android:layout_marginRight="25dp"
+     android:layout_marginEnd="25dp" />
+
+ <ImageView
+     android:layout_width="100dp"
+     android:layout_height="100dp"
+     android:id="@+id/imageView_ember"
+     android:background="@drawable/paper"
+     android:layout_below="@+id/textView_szoveg1"
+     android:layout_centerHorizontal="true" />
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/textView_szoveg1"
+     android:text="A te választásod"
+     android:textSize="30dp"
+
+     android:layout_alignParentTop="true"
+     android:layout_alignLeft="@+id/textView_szoveg2"
+     android:layout_alignStart="@+id/textView_szoveg2" />
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/textView_szoveg2"
+     android:text="A gép választása"
+     android:textSize="30dp"
+     android:layout_marginTop="14dp"
+     android:layout_below="@+id/imageView_ember"
+     android:layout_centerHorizontal="true" />
+
+ <ImageView
+     android:layout_width="100dp"
+     android:layout_height="100dp"
+     android:id="@+id/imageView_robot"
+     android:background="@drawable/rock"
+     android:layout_centerVertical="true"
+     android:layout_alignRight="@+id/textView_eredmeny2"
+     android:layout_alignEnd="@+id/textView_eredmeny2" />
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/textView_eredmeny"
+     android:text="0"
+     android:textSize="25dp"
+
+     android:layout_below="@+id/imageView_robot"
+     android:layout_alignLeft="@+id/btn_papir"
+     android:layout_alignStart="@+id/btn_papir"
+     android:layout_marginTop="24dp" />
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/textView_eredmeny2"
+     android:text="0"
+     android:textSize="25dp"
+     android:layout_alignBaseline="@+id/textView_eredmeny3"
+     android:layout_alignBottom="@+id/textView_eredmeny3"
+     android:layout_alignRight="@+id/btn_papir"
+     android:layout_alignEnd="@+id/btn_papir" />
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/textView_eredmeny3"
+     android:text=" : "
+     android:textSize="25dp"
+     android:layout_alignBaseline="@+id/textView_eredmeny"
+     android:layout_alignBottom="@+id/textView_eredmeny"
+     android:layout_centerHorizontal="true" />
+
+ <Button
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/btn_ollo"
+     android:text="olló"
+     android:layout_marginBottom="59dp"
+     android:layout_marginLeft="13dp"
+     android:layout_marginStart="13dp"
+     android:layout_alignParentBottom="true"
+     android:layout_toRightOf="@+id/imageView_robot"
+     android:layout_toEndOf="@+id/imageView_robot">
+
+ </Button>
+
+ <Button
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/btn_papir"
+     android:text="papír"
+     android:layout_alignBaseline="@+id/btn_ollo"
+     android:layout_alignBottom="@+id/btn_ollo"
+     android:layout_centerHorizontal="true"></Button>
+
+</RelativeLayout>
